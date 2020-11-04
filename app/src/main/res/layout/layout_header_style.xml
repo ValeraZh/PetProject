@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/include_header_height"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/bg"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logo_white_image_view_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_logo_white"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/corona_image_view_width"
+        android:layout_height="@dimen/corona_image_view_height"
+        android:layout_marginTop="@dimen/corona_image_view_margin_top"
+        android:scaleType="center"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_corona"
+        />
+</FrameLayout>

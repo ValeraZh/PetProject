@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".hello.presentation.HelloActivity"
+    >
+
+    <include
+        layout="@layout/layout_header_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_header_height"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_hello_margin_horizontal"
+        android:layout_marginTop="@dimen/activity_hello_margin_top"
+        android:text="@string/activity_hello_string_what_is_your_name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_hello_text_view_size"
+        />
+
+    <EditText
+        android:id="@+id/activity_hello_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hello_field_layout_height"
+        android:layout_marginHorizontal="@dimen/activity_hello_margin_horizontal"
+        android:layout_marginTop="@dimen/activity_hello_margin_top"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/activity_hello_string_hint_enter_your_name"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="@dimen/activity_hello_padding_horizontal"
+        android:textSize="@dimen/activity_hello_text_size"
+        />
+
+    <Button
+        android:id="@+id/activity_hello_button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hello_field_layout_height"
+        android:layout_marginTop="@dimen/activity_hello_margin_top"
+        android:layout_marginHorizontal="@dimen/activity_hello_margin_horizontal"
+        android:background="@drawable/bg_button_selector"
+        android:text="@string/activity_hello_string_button_continue"
+        android:textColor="@drawable/bg_edit_text_color"
+        android:textSize="@dimen/activity_hello_text_size"
+        android:enabled="false"
+        android:textAllCaps="false"
+        />
+</LinearLayout>
